@@ -1,0 +1,211 @@
+#am {
+  color: brown;
+
+  font-size: 40px;
+}
+.nav {
+  min-height: 42px;
+  background-color: aquamarine;
+  margin-top: 37px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav_list {
+  padding-left: 0;
+  margin: auto 16px;
+}
+.nav_item {
+  color: blueviolet;
+  list-style: none;
+  margin: 0 8px;
+  display: inline-block;
+}
+
+.form_row {
+  display: flex;
+}
+.form_input {
+  flex: 1;
+}
+.form_label {
+  min-width: 80px;
+}
+.nav__item {
+  background-color: yellowgreen;
+}
+.nav_item:hover {
+  color: yellow;
+  background-color: blueviolet;
+}
+.nav_item:active {
+  color: brown;
+}
+
+body > div {
+  margin: auto;
+}
+
+.btn:hover {
+  color: brown;
+  opacity: 0.8;
+}
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: aliceblue;
+  padding: 12px 48px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.btn + .btn {
+  margin-left: 16px;
+}
+.btn--success {
+  background-color: green;
+}
+.btn--warn {
+  background-color: orange;
+}
+
+.btn--danger {
+  background-color: red;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.toast {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+.toast {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 20px 0;
+  border-left: 4px solid;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+  transition: all linear 0.3s;
+}
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: stranslateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: stranslateX(0);
+  }
+}
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+.toast + .toast {
+  margin-top: 50px;
+}
+.toast--icon {
+  font-size: 24px;
+}
+
+.toast--icon,
+.toast__close {
+  padding: 0 16px;
+}
+.toast__body {
+  flex-grow: 1;
+}
+.toast__title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+.toast__mgs {
+  font-size: 14px;
+  color: #888;
+  margin-top: 4ox;
+  line-height: -1.6;
+}
+.toast__close {
+  font-size: 26px;
+  color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.toast--success {
+  color: aqua;
+}
+.toast--info {
+  color: purple;
+}
+.toast--warning {
+  color: red;
+}
+
+.button1 {
+  position: relative;
+  overflow: hidden;
+  width: 140px;
+  height: 50px;
+  border-radius: 25px;
+  color: #f7f7f7;
+  background: #275efe;
+  border: 0;
+  cursor: pointer;
+  transition: 0.2s;
+  left: 45%;
+}
+
+.button-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.button-links {
+  opacity: 0;
+  justify-content: space-around;
+  padding: 0 20px;
+  transition: 0.2s;
+}
+
+.button-text {
+  justify-content: center;
+  color: inherit;
+  font-size: 16px;
+  gap: 2px;
+}
+
+.button-links a {
+  translate: 0 25px;
+  transition: 0.3s;
+}
+
+.button1:hover {
+  border-radius: 6px;
+}
+
+.button1:hover .button-links {
+  opacity: 1;
+}
+.button1:hover .button-links a {
+  translate: 0;
+}
+
+.button1:hover .button-text {
+  translate: 0 -100%;
+}
+.button1 {
+  margin-bottom: 50px;
+  justify-content: center;
+}
